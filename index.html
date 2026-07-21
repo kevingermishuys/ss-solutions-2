@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Handyman Solutions — SS Electrical, Plumbing &amp; Handyman | 24/7 Potchefstroom</title>
+<meta name="description" content="Electrical, plumbing and handyman call-outs, 24 hours a day, Potchefstroom. Free quote — we'll beat any legal written quote. 5.0★ on Google.">
+<meta name="theme-color" content="#1e1e20">
+<link rel="icon" type="image/png" href="assets/img/logo.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["Electrician", "Plumber", "HomeAndConstructionBusiness"],
+  "name": "SS Electrical and Plumbing and Handyman Solutions",
+  "telephone": "+27656766719",
+  "email": "handymansolutions75@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "21 Goetz St",
+    "addressLocality": "Potchefstroom",
+    "postalCode": "2531",
+    "addressRegion": "North West",
+    "addressCountry": "ZA"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "00:00",
+    "closes": "23:59"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "7"
+  }
+}
+</script>
+
+<style>
+  :root{
+    /* Palette — sampled from the owner's logo and business card:
+       Charcoal: the logo's "Solutions" wordmark and the card's near-black background.
+       Copper: the logo's roofline and the "H"/"S" monogram.
+       Maroon: the logo's "Handyman" wordmark and the card's ribbon banner.
+       Cream: the card's ribbon background tone, used for the logo plate and light sections.
+       Blue/steel: sourced from the hero tool-belt photo's denim, used as a secondary accent. */
+    --charcoal:   #1e1e20;
+    --charcoal-2: #29282a;
+    --blue:       #4d6a8a;
+    --blue-bright:#7fa0bf;
+    --copper:     #ae7741;
+    --copper-bright:#c99a5e;
+    --copper-deep:#6b4425;
+    --maroon:     #8a3630;
+    --maroon-bright:#a8453d;
+    --cream:      #f6f1e6;
+    --cream-2:    #e9dfc9;
+    --steel:      #6b7580;
+    --ink:        #211e1a;
+    --focus:      #e0a83e;
+
+    /* Type: serif display echoes the logo's own serif wordmark; sans body
+       stays legible; monospace is kept only for the phone number itself. */
+    --font-display: Georgia, "Times New Roman", "Liberation Serif", serif;
+    --font-body:    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-mono:    ui-monospace, "SF Mono", "Cascadia Code", "Roboto Mono", Consolas, "Liberation Mono", monospace;
+  }
+
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0;
+    background:var(--cream);
+    color:var(--ink);
+    font-family:var(--font-body);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+  .container{
+    max-width:900px;
+    margin:0 auto;
+    padding:0 20px;
+  }
+  h1,h2,h3{font-family:var(--font-display);margin:0 0 .45em;line-height:1.12;font-weight:700;}
+  section{padding:52px 0;}
+
+  /* ---------- Emergency strip (sticky) ---------- */
+  .emergency{
+    position:sticky;
+    top:0;
+    z-index:50;
+    background:var(--charcoal);
+    border-bottom:3px solid var(--copper);
+    padding:env(safe-area-inset-top,0) 0 0;
+  }
+  .emergency-row{
+    display:flex;
+    align-items:stretch;
+    gap:10px;
+    max-width:900px;
+    margin:0 auto;
+    padding:10px 14px;
+  }
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    font-family:var(--font-body);
+    font-weight:700;
+    font-size:15px;
+    letter-spacing:.01em;
+    text-decoration:none;
+    border-radius:9px;
+    padding:12px 16px;
+    min-height:44px;
+    border:2px solid transparent;
+    white-space:nowrap;
+  }
+  .emergency .btn{flex:1;}
+  .btn-call{background:var(--maroon);color:#fff;}
+  .btn-whatsapp{background:transparent;color:var(--cream);border-color:var(--steel);}
+  .btn svg{width:18px;height:18px;flex:0 0 auto;}
+
+  .btn:focus-visible,
+  a:focus-visible,
+  summary:focus-visible{
+    outline:3px solid var(--focus);
+    outline-offset:2px;
+  }
+
+  /* ---------- Hero — photo-led, the card's own tool-belt macro shot ---------- */
+  .hero{
+    position:relative;
+    background-color:var(--charcoal);
+    background-image:
+      linear-gradient(155deg, rgba(20,18,16,.94) 0%, rgba(20,18,16,.72) 40%, rgba(20,18,16,.55) 100%),
+      url("assets/img/hero-bg.jpg");
+    background-size:cover;
+    background-position:center;
+    color:var(--cream);
+    padding:34px 0 42px;
+  }
+  .logo-plate{
+    display:inline-flex;
+    align-items:center;
+    background:var(--cream);
+    border-radius:10px;
+    padding:10px 16px;
+    margin:0 0 18px;
+    box-shadow:0 4px 18px rgba(0,0,0,.35);
+  }
+  .logo-plate img{width:min(48vw, 190px);height:auto;}
+  .brand-tagline{
+    font-family:var(--font-display);
+    font-style:italic;
+    font-size:15px;
+    color:var(--copper-bright);
+    margin:0 0 18px;
+    font-weight:700;
+  }
+  .hero h1{
+    color:#fff;
+    font-size:clamp(28px, 6.2vw, 42px);
+    max-width:15ch;
+    text-shadow:0 2px 12px rgba(0,0,0,.5);
+  }
+  .hero-sub{
+    font-size:clamp(16px, 3.6vw, 19px);
+    color:var(--cream);
+    max-width:44ch;
+    margin:0 0 20px;
+  }
+  .hero-sub strong{color:var(--copper-bright);font-weight:800;}
+
+  /* ribbon banner — the diagonal ribbon on the card, rendered flat/horizontal here */
+  .ribbon{
+    background:var(--cream);
+    border-top:2px solid var(--maroon);
+    border-bottom:2px solid var(--maroon);
+    color:var(--maroon);
+    font-weight:700;
+    font-size:14px;
+    padding:10px 16px;
+    margin:0 0 24px;
+    display:inline-block;
+  }
+  .ribbon strong{color:var(--ink);}
+
+  .terminal{
+    background:rgba(30,27,24,.86);
+    border:1px solid rgba(255,255,255,.18);
+    backdrop-filter:blur(2px);
+    border-radius:14px;
+    padding:20px 20px 22px;
+    margin-top:4px;
+  }
+  .terminal-label{
+    font-family:var(--font-mono);
+    font-size:11px;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    color:var(--cream);
+    opacity:.75;
+    margin:0 0 6px;
+  }
+  .phone-number{
+    font-family:var(--font-mono);
+    font-size:clamp(26px, 7.2vw, 36px);
+    font-weight:700;
+    color:#fff;
+    letter-spacing:.01em;
+    text-decoration:none;
+    display:inline-block;
+    margin:0 0 18px;
+  }
+  .phone-number:hover{color:var(--copper-bright);}
+  .hero-ctas{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+  }
+  .hero-ctas .btn{font-size:16px;padding:14px 22px;}
+  .hero-ctas .btn-call{background:var(--maroon);color:#fff;}
+  .hero-ctas .btn-whatsapp2{background:var(--blue);color:#fff;}
+
+  .hero-meta{
+    margin-top:22px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px 18px;
+    font-size:13px;
+    color:var(--cream);
+    opacity:.85;
+    font-family:var(--font-mono);
+  }
+
+  /* ---------- Services ---------- */
+  .services-intro h2{font-size:clamp(24px,5vw,32px);}
+  .services-intro p{max-width:56ch;color:#4a453c;}
+
+  .service-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:16px;
+    margin-top:26px;
+  }
+  @media(min-width:680px){
+    .service-grid{grid-template-columns:repeat(3,1fr);}
+  }
+  .service-card{
+    background:#fff;
+    border-top:4px solid var(--copper);
+    border-radius:6px;
+    padding:22px 20px;
+    box-shadow:0 1px 3px rgba(30,27,24,.08);
+  }
+  .service-card.plumbing{border-top-color:var(--blue);}
+  .service-card.handyman{border-top-color:var(--maroon);}
+  .service-card h3{
+    font-size:15px;
+    font-family:var(--font-body);
+    font-weight:800;
+    letter-spacing:.09em;
+    text-transform:uppercase;
+    color:var(--copper);
+    margin-bottom:14px;
+  }
+  .service-card.plumbing h3{color:var(--blue);}
+  .service-card.handyman h3{color:var(--maroon);}
+  .service-card ul{margin:0;padding-left:18px;color:#3a352d;font-size:15px;}
+  .service-card li{margin-bottom:7px;}
+
+  /* ---------- The work (real job photos) ---------- */
+  .work{background:var(--cream-2);}
+  .work h2{font-size:clamp(24px,5vw,32px);}
+  .work-intro{max-width:56ch;color:#4a453c;}
+  .work-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:14px;
+    margin-top:26px;
+  }
+  @media(min-width:680px){
+    .work-grid{grid-template-columns:repeat(4,1fr);}
+  }
+  .work-card{
+    background:#fff;
+    border-radius:6px;
+    overflow:hidden;
+    box-shadow:0 1px 3px rgba(30,27,24,.1);
+  }
+  .work-card img{width:100%;height:150px;object-fit:cover;}
+  .work-card .cap{
+    padding:10px 12px;
+    font-size:12.5px;
+    font-weight:700;
+    color:#4a453c;
+  }
+  @media(min-width:680px){
+    .work-card img{height:180px;}
+  }
+
+  /* ---------- Quote promise ---------- */
+  .quote-promise{
+    background:linear-gradient(135deg, var(--charcoal) 0%, var(--copper-deep) 100%);
+    color:#fff;
+    border-radius:10px;
+    padding:36px 26px;
+  }
+  .quote-promise h2{font-size:clamp(24px,5.6vw,32px);color:#fff;max-width:18ch;}
+  .quote-promise p{font-size:16px;max-width:56ch;color:#f3e6d4;margin:0 0 22px;font-family:var(--font-body);}
+  .quote-promise .btn-call{background:var(--maroon);color:#fff;border-color:rgba(255,255,255,.25);}
+
+  /* ---------- Proof (compact plate, not a full section swap) ---------- */
+  .proof-plate{
+    background:var(--charcoal);
+    color:var(--cream);
+    border-radius:10px;
+    padding:30px 26px;
+    display:grid;
+    gap:22px;
+    grid-template-columns:1fr;
+  }
+  @media(min-width:680px){
+    .proof-plate{grid-template-columns:180px 1fr;align-items:center;}
+  }
+  .rating-plate{text-align:center;}
+  .rating-plate .stars{color:var(--copper-bright);font-size:22px;letter-spacing:2px;}
+  .rating-plate .score{font-family:var(--font-mono);font-size:32px;font-weight:700;color:#fff;margin:4px 0 2px;}
+  .rating-plate .count{font-size:13px;color:var(--cream);opacity:.7;font-family:var(--font-body);}
+  .rating-plate .years{
+    margin-top:10px;padding-top:10px;border-top:1px solid rgba(255,255,255,.15);
+    font-family:var(--font-mono);font-size:12px;color:var(--cream);opacity:.7;
+  }
+  .review-quote{
+    font-size:clamp(18px,3.6vw,22px);
+    font-family:var(--font-display);
+    font-weight:700;
+    line-height:1.35;
+    margin:0 0 10px;
+  }
+  .review-quote::before{content:"“";}
+  .review-quote::after{content:"”";}
+  .review-attribution{color:var(--cream);opacity:.7;font-size:14px;font-family:var(--font-body);}
+  .honesty-line{margin-top:14px;color:var(--cream);opacity:.85;font-size:14.5px;max-width:52ch;font-family:var(--font-body);}
+
+  .stack{display:grid;gap:28px;margin-top:0;}
+
+  /* ---------- Service areas ---------- */
+  .areas h2{font-size:clamp(24px,5vw,32px);}
+  .area-primary{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    background:#fff;
+    border-left:4px solid var(--maroon);
+    border-radius:4px;
+    padding:14px 18px;
+    font-family:var(--font-mono);
+    font-weight:700;
+    font-size:16px;
+    margin:18px 0 14px;
+  }
+  .area-primary .dot{width:10px;height:10px;border-radius:50%;background:var(--maroon);flex:0 0 auto;}
+  .area-list{
+    display:flex;flex-wrap:wrap;gap:10px;
+    list-style:none;padding:0;margin:0 0 16px;
+  }
+  .area-list li{
+    background:var(--cream-2);
+    border-radius:999px;
+    padding:8px 14px;
+    font-size:14px;
+    color:#3a352d;
+  }
+  .areas .note{font-size:14px;color:#4a453c;max-width:60ch;}
+
+  /* ---------- Contact / footer ---------- */
+  .contact{
+    background:var(--charcoal);
+    color:var(--cream);
+  }
+  .contact h2{color:#fff;font-size:clamp(24px,5vw,30px);}
+  .contact-grid{
+    display:grid;gap:16px;
+    grid-template-columns:1fr;
+    margin-top:24px;
+  }
+  @media(min-width:600px){
+    .contact-grid{grid-template-columns:1fr 1fr;}
+  }
+  .contact-item{
+    background:var(--charcoal-2);
+    border-left:3px solid var(--copper);
+    border-radius:4px;
+    padding:16px 20px;
+  }
+  .contact-item .k{
+    font-family:var(--font-mono);
+    font-size:11px;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    color:var(--cream);
+    opacity:.7;
+    margin-bottom:6px;
+  }
+  .contact-item .v{
+    font-size:17px;
+    font-weight:600;
+    text-decoration:none;
+    color:#fff;
+    font-family:var(--font-body);
+  }
+  .contact-item .v:hover{color:var(--copper-bright);}
+  .contact-cta{margin-top:26px;display:flex;flex-wrap:wrap;gap:12px;}
+
+  footer{
+    background:var(--charcoal);
+    color:rgba(246,241,230,.7);
+    font-size:13px;
+    padding:8px 0 calc(28px + env(safe-area-inset-bottom,0));
+    text-align:center;
+    border-top:1px solid rgba(255,255,255,.08);
+  }
+  footer .footer-plate{
+    display:inline-flex;
+    background:var(--cream);
+    border-radius:8px;
+    padding:8px 14px;
+    margin:24px 0 12px;
+  }
+  footer .footer-plate img{width:110px;height:auto;}
+</style>
+</head>
+<body>
+
+<!-- ================= EMERGENCY STRIP ================= -->
+<div class="emergency" role="region" aria-label="Emergency contact">
+  <div class="emergency-row">
+    <a class="btn btn-call" href="tel:+27656766719">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      Call now
+    </a>
+    <a class="btn btn-whatsapp" href="https://wa.me/27761936696?text=Hi%2C%20I%20need%20help%20-%20can%20you%20call%20me%3F" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+      WhatsApp
+    </a>
+  </div>
+</div>
+
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <div class="container">
+    <div class="logo-plate">
+      <img src="assets/img/logo.png" alt="Handyman Solutions logo">
+    </div>
+    <p class="brand-tagline">One call. No job too small.</p>
+
+    <h1>The geyser's leaking. The DB board's tripping. The lights are out.</h1>
+    <p class="hero-sub">SS Electrical, Plumbing &amp; Handyman Solutions — <strong>one call, 24 hours a day, every day.</strong> Free quote, and we'll beat any legal written quote you've got.</p>
+
+    <p class="ribbon">Available after hours &amp; weekends. <strong>Always on time, always reliable.</strong></p>
+
+    <div class="terminal">
+      <p class="terminal-label">Direct line — answered 24/7</p>
+      <a class="phone-number" href="tel:+27656766719">+27 65 676 6719</a>
+      <div class="hero-ctas">
+        <a class="btn btn-call" href="tel:+27656766719">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call now
+        </a>
+        <a class="btn btn-whatsapp2" href="https://wa.me/27761936696?text=Hi%2C%20I%20need%20help%20-%20can%20you%20call%20me%3F" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          WhatsApp us
+        </a>
+      </div>
+    </div>
+
+    <p class="hero-meta">
+      <span>5.0★ GOOGLE / 7 REVIEWS</span>
+      <span>3+ YEARS IN BUSINESS</span>
+      <span>OPEN 24/7</span>
+    </p>
+  </div>
+</header>
+
+<!-- ================= SERVICES ================= -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="services-intro">
+      <h2>What we actually fix</h2>
+      <p>Real jobs, plain words. No "solutions," no "workmanship" — just the work.</p>
+    </div>
+
+    <div class="service-grid">
+      <div class="service-card electrical">
+        <h3>Electrical</h3>
+        <ul>
+          <li>Stoves, lights, plugs &amp; wiring</li>
+          <li>DB boards &amp; fault finding</li>
+          <li>Electrical gate motors</li>
+        </ul>
+      </div>
+
+      <div class="service-card plumbing">
+        <h3>Plumbing</h3>
+        <ul>
+          <li>Electric, gas &amp; solar geysers</li>
+          <li>Pipe leaks &amp; burst pipes</li>
+          <li>Fixtures, toilets &amp; all piping</li>
+          <li>Blocked drains</li>
+        </ul>
+      </div>
+
+      <div class="service-card handyman">
+        <h3>Handyman</h3>
+        <ul>
+          <li>General repairs around the house</li>
+          <li>Maintenance jobs, big or small</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= THE WORK (real job photos) ================= -->
+<section class="work">
+  <div class="container">
+    <h2>Recent jobs</h2>
+    <p class="work-intro">Straight off the phone, no styling.</p>
+    <div class="work-grid">
+      <div class="work-card">
+        <img src="assets/img/work-1.jpg" alt="Gas geyser installed on an outside wall">
+        <p class="cap">Gas geyser install</p>
+      </div>
+      <div class="work-card">
+        <img src="assets/img/work-2.jpg" alt="Electric geyser replacement mounted on a wall">
+        <p class="cap">Electric geyser replacement</p>
+      </div>
+      <div class="work-card">
+        <img src="assets/img/work-3.jpg" alt="Tool belt kitted up with hammer and pliers">
+        <p class="cap">Kitted up and ready</p>
+      </div>
+      <div class="work-card">
+        <img src="assets/img/work-4.jpg" alt="Electrician checking a DB board bus bar">
+        <p class="cap">Electrical fault-finding</p>
+      </div>
+    </div>
+    <!-- SLOT: more real job photos — the owner can drop additional finished-work
+         shots into this grid the same way. Note: the third and fourth photos
+         above read as studio/stock images rather than on-site shots — worth
+         swapping for real job photos when available. -->
+  </div>
+</section>
+
+<!-- ================= QUOTE PROMISE + PROOF ================= -->
+<section id="quote">
+  <div class="container stack">
+    <div class="quote-promise">
+      <h2>Free quote. We'll beat any legal written quote you've got.</h2>
+      <p>Get a written quote from anyone else and bring it to us — we'll beat it. That's the offer, no fine print beyond this: it has to be a legal written quote.</p>
+      <a class="btn btn-call" href="tel:+27656766719">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Get a free quote
+      </a>
+    </div>
+
+    <div class="proof-plate">
+      <div class="rating-plate">
+        <div class="stars">★★★★★</div>
+        <div class="score">5.0</div>
+        <div class="count">from 7 Google reviews</div>
+        <div class="years">3+ years in business</div>
+      </div>
+      <div>
+        <p class="review-quote">Experience with excellent work fast and friendly worth calling</p>
+        <p class="review-attribution">— Google review</p>
+        <p class="honesty-line">Seven reviews, all five stars. We'd rather earn the eighth than promise you a hundred we don't have.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICE AREAS ================= -->
+<section class="areas">
+  <div class="container">
+    <h2>Where we work</h2>
+
+    <div class="area-primary">
+      <span class="dot"></span> Based in Potchefstroom
+    </div>
+    <ul class="area-list">
+      <li>Potchefstroom</li>
+      <li>Surrounding areas — to confirm</li>
+    </ul>
+    <p class="note">Not sure if we cover your suburb? Call or WhatsApp and ask — if we're not the right fit we'll tell you straight away.</p>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="contact">
+  <div class="container">
+    <h2>Get hold of us</h2>
+    <div class="contact-grid">
+      <div class="contact-item">
+        <div class="k">Call — Sean</div>
+        <a class="v" href="tel:+27656766719">+27 65 676 6719</a>
+      </div>
+      <div class="contact-item">
+        <div class="k">Call — Yolanda</div>
+        <a class="v" href="tel:+27823479402">+27 82 347 9402</a>
+      </div>
+      <div class="contact-item">
+        <div class="k">WhatsApp</div>
+        <a class="v" href="https://wa.me/27761936696" target="_blank" rel="noopener">+27 76 193 6696</a>
+      </div>
+      <div class="contact-item">
+        <div class="k">Email</div>
+        <a class="v" href="mailto:handymansolutions75@gmail.com">handymansolutions75@gmail.com</a>
+      </div>
+    </div>
+    <p class="honesty-line">Open 24/7 — every day. Available after hours and weekends.</p>
+
+    <div class="contact-cta">
+      <a class="btn btn-call" href="tel:+27656766719">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call now
+      </a>
+      <a class="btn btn-whatsapp2" href="https://wa.me/27761936696?text=Hi%2C%20I%20need%20help%20-%20can%20you%20call%20me%3F" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        WhatsApp us
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-plate">
+      <img src="assets/img/logo.png" alt="Handyman Solutions logo">
+    </div>
+    <p>SS Electrical and Plumbing and Handyman Solutions · Potchefstroom</p>
+  </div>
+</footer>
+
+</body>
+</html>
